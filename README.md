@@ -16,9 +16,10 @@ Create the virtual environment and install the dependencies:
 
 ```
 python3 -m venv .venv
-source .venv/bin/activate
-.venv/bin/pip install -r requirements.txt
+.venv\Scripts\activate
+.venv\Scripts\pip install -r requirements.txt
 ```
+'deactivate' to stop virtual environment
 
 Here is a summary of what this repository will use:
 
