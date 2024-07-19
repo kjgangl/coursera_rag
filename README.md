@@ -19,6 +19,7 @@ python3 -m venv .venv
 .venv\Scripts\activate
 .venv\Scripts\pip install -r requirements.txt
 ```
+it was necessary to install Visual Studio C++ for desktop before pandas would install correclty
 'deactivate' to stop virtual environment
 
 Here is a summary of what this repository will use:
