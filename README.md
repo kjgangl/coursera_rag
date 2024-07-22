@@ -19,7 +19,7 @@ python3 -m venv .venv
 .venv\Scripts\activate
 .venv\Scripts\pip install -r requirements.txt
 ```
-it was necessary to install Visual Studio C++ for desktop before pandas would install correclty
+note: it was necessary to install Visual Studio C++ for desktop before pandas would install correclty
 'deactivate' to stop virtual environment
 
 Here is a summary of what this repository will use:
@@ -27,7 +27,11 @@ Here is a summary of what this repository will use:
 1. [Qdrant](https://github.com/qdrant/qdrant) for the vector database. We will use an in-memory database for the examples
 2. [Llamafile](https://github.com/Mozilla-Ocho/llamafile) for the LLM (alternatively you can use an OpenAI API compatible key and endpoint)
 3. [OpenAI's Python API](https://pypi.org/project/openai/) to connect to the LLM after retrieving the vectors response from Qdrant
+note: see https://help.openai.com/en/articles/5112595-best-practices-for-api-key-safety
 4. Sentence Transformers to create the embeddings with minimal effort
+
+**Using OpenAI project key**
+from command prompt, enter:  setx OPENAI_API_KEY "your-api-key-here"
 
 **Use Llamafile for a full RAG and LLM setup**
 
